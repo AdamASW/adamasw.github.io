@@ -78,3 +78,12 @@ function fadeIn(el, display) {
         }
     })();
 };
+
+//  Code for "see more..." transition.
+const aboutText = document.getElementById('about-text');
+const toggleBtn = document.getElementById('toggle-btn');
+
+toggleBtn.addEventListener('click', () => {
+    aboutText.classList.toggle('expanded');
+    toggleBtn.textContent = aboutText.classList.contains('expanded') ? 'See less' : 'See more';
+});

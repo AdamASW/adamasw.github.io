@@ -11108,3 +11108,15 @@ footer.footer .social-link:hover {
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+/* Collapsible paragraph */
+#about-text {
+    max-height: 10rem; /* adjust so 5 lines fit nicely */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+/* When expanded */
+#about-text.expanded {
+    max-height: 1000px; /* big enough to show all content */
+}
